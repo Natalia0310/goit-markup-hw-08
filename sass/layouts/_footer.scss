@@ -5,20 +5,19 @@
    
 }
 .footer-container {
+  @media screen and (min-width: 480px), (max-width: 767px) {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  }    
  
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-    width: 768px;
-    justify-content: space-between;
-    width: 738px;
-    margin: 0 auto;
-    }
+  @media screen and (min-width: 768px), (max-width: 1199px){
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 
+  } 
+ 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -63,8 +62,9 @@
   padding-bottom: 10px;
   
   @media screen and (min-width: 1200px) {
-   padding-left: 38px;
-   padding-right: 38px; 
+   padding-left: 28px;
+   padding-right: 28px; 
+   height: 50px;
   }    
   }
   .footer__mail {
