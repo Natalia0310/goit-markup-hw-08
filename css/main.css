@@ -72,16 +72,23 @@ ul {
   }
 }
 
-.address {
-  display: none;
+@media screen and (min-width: 480px), (max-width: 767px) {
+  .address {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*flex-direction: column;*/
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     font-style: normal;
   }
@@ -91,10 +98,18 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 50px;
     list-style: none;
     margin-left: auto;
     font-style: normal;
+    padding-left: 0;
   }
 }
 
@@ -104,6 +119,11 @@ ul {
   transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px), (max-width: 767px) {
+  .address__link {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .address__link {
     text-decoration: none;
@@ -113,7 +133,7 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px;
+    height: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1238,7 +1258,7 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1246,10 +1266,8 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 80px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
 }
 
@@ -1481,8 +1499,10 @@ ul {
   text-decoration: none;
 }
 
-.nav__list {
-  display: none;
+@media screen and (min-width: 480px), (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__list {
