@@ -75,7 +75,18 @@ ul {
 .address {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-direction: column;*/
+    list-style: none;
+    margin-left: auto;
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 1200px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,14 +104,28 @@ ul {
   transition: background-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .address__link {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address__link {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .address__link:last-child {
@@ -1041,8 +1066,6 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1151,6 +1174,7 @@ ul {
   color: var(--fond-heder);
   text-decoration: none;
   margin-bottom: 20px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
@@ -1209,22 +1233,24 @@ ul {
   margin-bottom: 20px;
 }
 
-.page-header {
+.header {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 80px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+@media screen and (min-width: 1200px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 80px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .header__logo {
