@@ -1041,6 +1041,8 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
