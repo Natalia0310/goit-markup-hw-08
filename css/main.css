@@ -1624,6 +1624,92 @@ ul {
   text-decoration: none;
 }
 
+.net {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.net__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.net__link::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*width: 1px;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  margin-bottom: 0;*/
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  left: 135px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.mob__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mob__link--blue {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 32px;
+  text-decoration: none;
+}
+
+.nav--mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  margin-bottom: 302px;
+}
+
 @media screen and (min-width: 480px), (max-width: 767px) {
   .nav__list {
     display: none;
@@ -1672,36 +1758,61 @@ ul {
   margin-right: 0px;
 }
 
-.nav__link--active {
-  color: var(--title-text-color);
-  display: block;
-  line-height: 1.1428571429;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  list-style: none;
-  gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .nav__link--active {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__link--active {
+    color: var(--title-text-color);
+    display: block;
+    line-height: 1.1428571429;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    list-style: none;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -webkit-transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.nav__link--inactive {
-  color: var(--accent-color);
-  display: block;
-  line-height: 1.1428571429;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  list-style: none;
-  gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  -webkit-transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .nav__link--inactive {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__link--inactive {
+    color: var(--accent-color);
+    display: block;
+    line-height: 1.1428571429;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    list-style: none;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    -webkit-transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .nav__link:hover,
