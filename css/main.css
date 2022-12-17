@@ -70,10 +70,8 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
-  .address {
-    display: none;
-  }
+.address {
+  display: none;
 }
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .address {
@@ -159,12 +157,10 @@ ul {
 .contacts {
   display: block;
   list-style: none;
-  margin-left: 15px;
 }
 
 @media screen and (min-width: 480px), (max-width: 1199px) {
   .contacts__item {
-    margin-right: auto;
     text-align: center;
     margin-bottom: 9px;
     margin-top: 9px;
@@ -179,8 +175,8 @@ ul {
 
 @media screen and (min-width: 480px), (max-width: 1199px) {
   .contacts__maps {
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
     text-align: center;
     font-family: "Roboto";
     font-style: normal;
@@ -1570,6 +1566,7 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
@@ -1590,7 +1587,7 @@ ul {
   height: 100vh;
   padding: 32px;
   background-color: #ffffff;
-  z-index: 999;
+  z-index: 10;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
