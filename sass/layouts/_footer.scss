@@ -7,31 +7,39 @@
 .footer-container {
   @media screen and (min-width: 480px), (max-width: 767px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
-    }
-      
-  @media screen and (min-width: 768px), (max-width: 1199px) {
+    }  
+    
+    @media screen and (min-width: 768px), (max-width: 1199px) {
       display: flex;
       flex-direction: row; 
       flex-wrap: wrap;
-    } 
+    }      
+  
  
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    }   
+    } 
+
+   
+
+ 
 }
 .footer__address {
   @media screen and (min-width: 480px), (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
     }   
 
   @media screen and (min-width: 768px), (max-width: 1199px) {
-    margin-right: 165px;
-    margin-left: 76px;
+    /*margin-right: 165px;
+    margin-left: 76px;*/
 
 
   }
@@ -211,3 +219,66 @@
       text-align: start;
         }   
   } 
+
+  .footer__contacts {
+    @media screen and (min-width: 480px), (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    }
+  }
+  .contacts {
+    display: block;
+    list-style: none;
+    
+  }
+  .contacts__item {
+    
+  @media screen and (min-width: 1200px) {
+    text-align: start;  
+    margin-left: 15px;
+  }
+  }
+  
+  
+  .contacts__maps {
+    @media screen and (min-width: 480px), (max-width: 1199px) { 
+   
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 9px; 
+    }   
+    
+    @media screen and (min-width: 1200px) {
+    /*margin-left: 15px; */
+    text-align: start;
+    }   
+  }
+  .contacts__link {
+    
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+  
+    @media screen and (min-width: 768px) {
+     
+    }   
+  }
+  
+  
+  
+    
+   

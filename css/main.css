@@ -154,58 +154,6 @@ ul {
   cursor: pointer;
 }
 
-.contacts {
-  display: block;
-  list-style: none;
-}
-
-@media screen and (min-width: 480px), (max-width: 1199px) {
-  .contacts__item {
-    text-align: center;
-    margin-bottom: 9px;
-    margin-top: 9px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__item {
-    text-align: start;
-    margin-left: 15px;
-  }
-}
-
-@media screen and (min-width: 480px), (max-width: 1199px) {
-  .contacts__maps {
-    /*margin-left: auto;
-    margin-right: auto;*/
-    text-align: center;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7142857143;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: 9px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__maps {
-    margin-left: 15px;
-    text-align: start;
-  }
-}
-
-.contacts__link {
-  font-style: normal;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
-}
 .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1113,15 +1061,25 @@ ul {
 
 @media screen and (min-width: 480px), (max-width: 767px) {
   .footer__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
   }
 }
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .footer__address {
-    margin-right: 165px;
-    margin-left: 76px;
+    /*margin-right: 165px;
+    margin-left: 76px;*/
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1374,6 +1332,64 @@ ul {
   }
 }
 
+@media screen and (min-width: 480px), (max-width: 767px) {
+  .footer__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contacts {
+  display: block;
+  list-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    text-align: start;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 480px), (max-width: 1199px) {
+  .contacts__maps {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__maps {
+    /*margin-left: 15px; */
+    text-align: start;
+  }
+}
+
+.contacts__link {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
 .header {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
