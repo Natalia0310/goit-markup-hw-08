@@ -73,7 +73,7 @@ ul {
 .address {
   display: none;
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1020,7 +1020,7 @@ ul {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1034,7 +1034,7 @@ ul {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1076,10 +1076,11 @@ ul {
     margin-right: auto;*/
   }
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__address {
-    /*margin-right: 165px;
-    margin-left: 76px;*/
+    margin-right: 165px;
+    margin-left: 76px;
+    margin-top: 65px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1203,6 +1204,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__mail {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -1262,13 +1264,13 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 93px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*margin-left: 93px;*/
   }
 }
 
