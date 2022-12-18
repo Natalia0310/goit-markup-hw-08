@@ -1,4 +1,4 @@
-.menu {
+/*.menu {
     display: flex;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@
   .menu .link:hover,
   .menu .link:focus {
     text-decoration: underline;
-  }
+  }*/
   
   .menu-toggle {
     min-height: 40px;
@@ -36,7 +36,7 @@
     border: none;
     border-radius: 50%;
     outline: none;
-    z-index: 5000;
+    z-index: 11;
   }
   
  @media (min-width: 768px) {
@@ -49,9 +49,7 @@
   .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  .menu-toggle .js-close-menu {
-    z-index: 10;
-  }
+ 
   
   .menu-container {
     position: fixed;
@@ -107,7 +105,7 @@ color: #2196F3;
 text-decoration: none;
   }
 .net__link::after {
-    /*content: '';
+    content: '';
     display: flex;
     width: 1px;
     height: 4px;
@@ -116,7 +114,7 @@ text-decoration: none;
     bottom: -1px;
     left: 0;
    
-    margin-bottom: 0;*/
+    margin-bottom: 0;
 
 
 position: absolute;
@@ -189,22 +187,76 @@ transform: rotate(90deg);
     color: #212121;
     } 
 }
-/*.menu__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu__button .icon-close {
-  display: none;
-}
-.menu__button .is-open .icon-close {
-  display: block;
-}
-.menu__button .is-open .icon-menu {
-  display: none;
 
-  
 
-  }*/
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    z-index: 11;
+    
+    @media screen and (min-width: 768px) {
+            display: none;
+    } 
+
+ }
+  .mobile-menu-burger {
+  transition: 250ms;
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+   .mobile-menu-btn.is-open & {
+            opacity: 0;
+        }
+ }
+
+
+ .mobile-menu-close {
+    opacity: 0;
+    transition: 250ms;
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    }
+    .mobile-menu-btn.is-open & {
+            opacity: 1;
+        }
+ }  
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateX(100%);
+
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+
+    transition: transform 250ms;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+}

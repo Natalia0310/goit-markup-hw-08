@@ -32,19 +32,12 @@
             <li class="nav__item"><a href="Контакти" class="nav__link nav__link--active">Контакти</a></li>
           </ul>
 
-          <!--<button
-          class="menu-button is-open" js-open-menu 
-          aria-label="перемикач мобільного меню"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="40"
-            height="40">
-            <use  class="icon-menu"href="./images/icon.svg#"menu_24px"></use>  
-            <use  class="icon-close"href="./images/icon.svg#"close_24px"></use> 
-          </svg>
-        </button>-->  
+          <!--<button class="mobile-menu-btn" type="button" aria-label="menu button" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+                <use class="mobile-menu-burger" href="./images/icons.svg#menu_24px" aria-label="open menu"></use>
+                
+            </svg>
+        </button>-->
 
         </nav>
        
@@ -67,45 +60,31 @@
           </ul>
       
         <button
-          class="menu-toggle js-open-menu" 
+          class="mobile-menu-btn js-open-menu" 
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
+          <svg class="mobile-menu-icon"
             width="24"
             height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+            <use class="mobile-menu-burger" href="./images/icons.svg#close24px" aria-label="close menu"></use>
+           
+          
           </svg>
-        </button>  
+        </button> 
 
-        
+       
 
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu" >
-            <svg
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="mobile-menu-btn js-close-menu" >
+            <svg class="mobile-menu-icon"
+             width="24"
+             height="24">
+             <use class="mobile-menu-close" href="./images/icons.svg#menu24px" aria-label="close menu"></use >
+               </svg>
           </button> 
 
-          <ul class="mob--nav">
+         <ul class="mob--nav">
             <li class="mob__item"><a href="Cтудія" class="mob__element mob__element--inactive">Cтудія</a></li>
             <li class="mob__item"
             ><a href="./portfolio.html" class="mob__element mob__element--active">Портфоліо</a></li>
@@ -701,6 +680,10 @@
       </form>
       </div>
   </footer>
+
+  
+
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" type="button" data-modal-close>
