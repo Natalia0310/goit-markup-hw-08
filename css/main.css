@@ -1581,7 +1581,6 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
-  z-index: 1000;
 }
 
 @media (min-width: 768px) {
@@ -1594,6 +1593,10 @@ ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.menu-toggle .js-close-menu {
+  z-index: 10000;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -1602,7 +1605,7 @@ ul {
   height: 100vh;
   padding: 32px;
   background-color: #ffffff;
-  z-index: 10;
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1743,6 +1746,25 @@ ul {
   }
 }
 
+/*.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu__button .icon-close {
+  display: none;
+}
+.menu__button .is-open .icon-close {
+  display: block;
+}
+.menu__button .is-open .icon-menu {
+  display: none;
+
+
+
+  }*/
 @media screen and (min-width: 480px), (max-width: 767px) {
   .nav__list {
     display: none;
