@@ -32,14 +32,7 @@
             <li class="nav__item"><a href="Контакти" class="nav__link nav__link--active">Контакти</a></li>
           </ul>
 
-          <!--<button class="mobile-menu-btn" type="button" aria-label="menu button" data-menu-button>
-            <svg class="mobile-menu-icon" width="24" height="16">
-                <use class="mobile-menu-burger" href="./images/icons.svg#menu_24px" aria-label="open menu"></use>
-                
-            </svg>
-        </button>-->
-
-        </nav>
+          </nav>
        
           <ul class="address">
             <li class="address__link"
@@ -59,60 +52,15 @@
             >
           </ul>
       
-        <button
-          class="mobile-menu-btn js-open-menu" 
-          aria-expanded="false"
+       <button type="button" class="menu-btn js-open-menu"
+       aria-expanded="false"
           aria-controls="mobile-menu"
-        >
-          <svg class="mobile-menu-icon"
-            width="24"
-            height="24"
-            <use class="mobile-menu-burger" href="./images/icons.svg#menu24px" aria-label="open menu"></use>
-          </svg>
-        </button> 
-
+       >
+       <svg width="40" height="40">
+        <use href="./images/icon.svg#menu-open"></use>
+      </svg>
+      </button>
        
-
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <button class="mobile-menu-btn js-close-menu" >
-            <svg class="mobile-menu-icon"
-             width="24"
-             height="24">
-             <use class="mobile-menu-close" href="./images/icon.svg#close24px" aria-label="close menu"></use >
-               </svg>
-          </button> 
-
-         <ul class="mob--nav">
-            <li class="mob__item"><a href="Cтудія" class="mob__element mob__element--inactive">Cтудія</a></li>
-            <li class="mob__item"
-            ><a href="./portfolio.html" class="mob__element mob__element--active">Портфоліо</a></li>
-          <li class="mob__item"><a href="Контакти" class="mob__element mob__element--active">Контакти</a></li>
-        </ul>
-
-        <ul class="mob">
-          
-          <li class="mob__link"
-            ><a href="tel:+380961111111" class="mob__link--blue">
-              
-              +380961111111</a></li
-          >
-          <li class="mob__link"
-            ><a href="mailto:info@devstudio.com" class="mob__link"
-              >
-              info@devstudio.com
-              </a></li
-          >
-        </ul>
-
-        <ul class="net">
-          <li><a href="https://instagram.com" class="net__link">Instagram</a></li>
-          <li><a href="https://twitter.com" class="net__link">Twitter</a></li>
-          <li><a href="https://facebook.com" class="net__link">Facebook</a></li>
-          <li><a href="https://linkedin.com" class="net__link">LinkedIn</a></li>
-        </ul>
-          </div>
-          
-
     </header>
     <main>
       <section class="hero">
@@ -679,6 +627,42 @@
       </div>
   </footer>
 
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/icon.svg#menu-close"></use>
+      </svg> 
+    </button> 
+
+   <ul class="mob--nav">
+      <li class="mob__item"><a href="Cтудія" class="mob__element mob__element--inactive">Cтудія</a></li>
+      <li class="mob__item"
+      ><a href="./portfolio.html" class="mob__element mob__element--active">Портфоліо</a></li>
+    <li class="mob__item"><a href="Контакти" class="mob__element mob__element--active">Контакти</a></li>
+  </ul>
+
+  <ul class="mob">
+    
+    <li class="mob__link"
+      ><a href="tel:+380961111111" class="mob__link--blue">
+        
+        +380961111111</a></li
+    >
+    <li class="mob__link"
+      ><a href="mailto:info@devstudio.com" class="mob__link"
+        >
+        info@devstudio.com
+        </a></li
+    >
+  </ul>
+
+  <ul class="net">
+    <li><a href="https://instagram.com" class="net__link">Instagram</a></li>
+    <li><a href="https://twitter.com" class="net__link">Twitter</a></li>
+    <li><a href="https://facebook.com" class="net__link">Facebook</a></li>
+    <li><a href="https://linkedin.com" class="net__link">LinkedIn</a></li>
+  </ul>
+    </div>
   
 
 
@@ -794,6 +778,7 @@
 
   </body>
 </html>
+
 
 
 
