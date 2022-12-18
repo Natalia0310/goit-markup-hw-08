@@ -1581,6 +1581,7 @@ ul {
   border: none;
   border-radius: 50%;
   outline: none;
+  z-index: 5000;
 }
 
 @media (min-width: 768px) {
@@ -1594,7 +1595,7 @@ ul {
 }
 
 .menu-toggle .js-close-menu {
-  z-index: 10000;
+  z-index: 10;
 }
 
 .menu-container {
