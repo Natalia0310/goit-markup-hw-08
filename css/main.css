@@ -1017,7 +1017,7 @@ ul {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1059,7 +1059,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .footer__address {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1186,7 +1186,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer__logo {
     margin: 0px auto;
     display: block;
