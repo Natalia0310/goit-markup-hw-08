@@ -52,12 +52,21 @@
 
 }
 .net {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+  @media screen and (min-width: 320px) {
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 10px;
     margin-bottom: 48px;
   }
-  .net__link {
+  @media screen and (min-width: 320px) {
+    display: flex;
+    flex-direction: row;
+    
+    }
+  
+  }
+
+    .net__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -77,11 +86,21 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
   color: #757575;
   text-decoration: none;
 }
 .mob__link--blue {
+  @media screen and (min-width: 320px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em; 
+    color: #2196F3;
+    text-decoration: none;
+    }   
+    
+    @media screen and (min-width: 480px) {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -89,6 +108,9 @@
   color: #2196F3;
   margin-bottom: 32px; 
   text-decoration: none;
+}
+
+
 }
 .mob--nav {
   display: flex;
@@ -117,7 +139,8 @@
 
 }*/
 .mob__element--active {
-  @media screen and (min-width: 480px) {
+
+  @media screen and (min-width: 320px) {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -135,6 +158,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  border: transparent;
+  background-color: #fff;
+
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
