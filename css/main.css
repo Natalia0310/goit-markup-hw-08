@@ -1936,6 +1936,11 @@ ul {
   background-color: var(--secondary-white-color);
   padding: 0;
 }
+@media screen and (min-width: 320px) {
+  .team {
+    padding: 60px 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team {
     padding: 94px 0;
