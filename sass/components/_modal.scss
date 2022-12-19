@@ -15,6 +15,7 @@
 }
 
 .modal {
+  @media screen and (min-width: 320px) {
     display: block;
     position: absolute;
     top: 50%;
@@ -24,14 +25,21 @@
     padding-right: 40px;
     padding-bottom: 40px;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+   
+   }
+   @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+ 
+    } 
    
   }
   .modal__btn {
@@ -56,17 +64,30 @@
    
   }
   .form__title {
+
+  
+    @media screen and(min-width: 320px) {
     display: block;
     text-align: center;
     justify-content: center;
+    font-weight: 700;
+
+   line-height: 30px;
     font-size: 20px;
     margin-bottom: 12px;  
   }
+  @media screen and(min-width: 768px) {
+    margin-bottom: 12px;  
+    }
+
+
+}
   .form__group {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     gap: 10px; 
+    
     
   }
   .form__heading {
@@ -75,6 +96,7 @@
     display: block;
     margin-bottom: 4px;
     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   .form__field {
     position: relative;
@@ -94,6 +116,7 @@
     margin-bottom: 4px;
     display: block;
     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
   .form__input {
     width: 100%;
@@ -104,6 +127,7 @@
     border-radius: 4px;
     transition: border-color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     outline-color: var(--accent-color);
+   
   }
   .form__input:hover + .form__icon {
     fill: var(--accent-color);
@@ -118,6 +142,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
+    
   } 
   .form__message {
     resize: none;
@@ -193,11 +218,21 @@
   }
   
 .form__desc {
-  font-size: 14px;
-  line-height: calc(24px /14px);
-  letter-spacing: 0.03em;
-  color: #757575;
-  user-select: none;
+  @media screen and (min-width: 320px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    line-height: calc(14px /12px);
+    letter-spacing: 0.03em;
+    color: #757575;
+    user-select: none;
+    } 
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(24px /14px);  
+  } 
+
+ 
   
 }
 .form__message::placeholder {
