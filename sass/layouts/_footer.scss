@@ -149,6 +149,33 @@
   }
   .footer__logo--light {
     color: var(--accent-color);
+    @media screen and(min-width: 320px)and(max-width: 1199px) {
+      margin: 0px auto;
+      display: block;
+      text-align: center;
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: calc(28 / 24);
+      letter-spacing: 0.03em;
+     
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26); 
+    
+      display: block;
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+     
+      letter-spacing: 0.03em;
+      color: var(--fond-heder);
+      text-decoration: none;
+      margin-bottom: 20px;
+    }        
   }
   .subscription {
     @media screen and (min-width: 480px) {
@@ -224,7 +251,7 @@
   } 
 
   .footer__contacts {
-    @media screen and(min-width: 480px)and(max-width: 767px) {
+    @media screen and(min-width: 320px)and(max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +272,7 @@
   }
   
   .contacts__maps {
-    @media screen and(min-width: 480px)and(max-width: 1199px) { 
+    @media screen and(min-width: 320px)and(max-width: 1199px) { 
    
     text-align: center;
     font-family: 'Roboto';
