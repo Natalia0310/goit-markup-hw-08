@@ -25,7 +25,7 @@
     padding-right: 40px;
     padding-bottom: 40px;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 290px;
     height: 609px;
     max-height: 90vh;
     overflow-y: scroll;
@@ -37,6 +37,11 @@
     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
    
    }
+   @media screen and (min-width: 480px) {
+   width: 450px;
+ 
+    } 
+
    @media screen and (min-width: 768px) {
     width: 528px;
     height: 581px;
