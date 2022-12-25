@@ -196,18 +196,17 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    height: 674px;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     -webkit-transition: -webkit-transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
@@ -218,8 +217,12 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    width: 568px;
+    height: 668px;
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 32px;
   }
 }
 
@@ -247,27 +250,52 @@ ul {
   transition: fill var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__btn:hover,
+/*.modal__btn:hover,
 .modal__btn:focus {
   fill: #2196f3;
-}
 
+}*/
 @media screen and (min-width: 320px) {
   .form__title {
-    display: block;
+    font-family: "Seymour One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-weight: 700;
-    line-height: 30px;
-    font-size: 20px;
-    margin-bottom: 12px;
+    color: #131313;
   }
 }
 @media screen and (min-width: 768px) {
   .form__title {
-    margin-bottom: 12px;
+    font-style: normal;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .form__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    font-family: "Montserrat";
+    text-align: left;
+    color: #131313;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form__text {
+    margin-bottom: 32px;
+    font-size: 16px;
   }
 }
 
@@ -297,6 +325,7 @@ ul {
 .form__field {
   position: relative;
   display: block;
+  outline: 1px solid green;
 }
 
 .form__icon {
@@ -319,6 +348,7 @@ ul {
   transition: -webkit-transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid red;
 }
 
 .form__input {
@@ -548,7 +578,7 @@ ul {
 @media screen and (min-width: 320px) and (min-width: 767px) {
   .form__btn {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: px;
     margin-top: 20px;
   }
 }
