@@ -25,15 +25,31 @@
     padding-right: 28px;
     padding-bottom: 28px;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     width: 280px;
     height: 674px;
     background-color:  #FCFCFC;;
     border-radius: 10px;
     border: 2px solid #F8D24E;;
+=======
+    width: 290px;
+    height: 609px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+>>>>>>> 3dba26e26f337b2b945d9fcbd33cdd4688e8f072
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
    
    }
+   @media screen and (min-width: 480px) {
+   width: 450px;
+ 
+    } 
+
    @media screen and (min-width: 768px) {
     width: 568px;
     height: 668px;
